@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoreQuiz"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title=".NET Core Quiz" Height="450" Width="800">
     <Grid>
-        
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="163,131,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="163,186,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="163,240,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="RadioButton" HorizontalAlignment="Left" Margin="163,240,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <TextBlock HorizontalAlignment="Left" Margin="96,52,0,0" TextWrapping="Wrap" Text="What year was .NET Core Released?" VerticalAlignment="Top" FontSize="36" FontFamily="Microsoft JhengHei UI Light"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="326,368,0,0" VerticalAlignment="Top" Width="75" Background="#FF1873E7" Click="Button_Click"/>
+
     </Grid>
 </Window>
