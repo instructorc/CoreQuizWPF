@@ -29,5 +29,18 @@ namespace CoreQuiz
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void NextButton_Click(object sender, RoutedEventArgs e)
+        {
+            Results aWindow = new Results();
+            aWindow.Show();
+            this.Close();
+
+        }
     }
 }
