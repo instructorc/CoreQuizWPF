@@ -5,15 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoreQuiz"
         mc:Ignorable="d"
-        Title=".NET Core Quiz" Height="450" Background="#6b8e23" Width="800">
-    <Grid>
-        <RadioButton Content="2018" GroupName="question" HorizontalAlignment="Left" Margin="131,102,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
-        <RadioButton Content="2014" GroupName="question" HorizontalAlignment="Left" Margin="131,151,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
-        <RadioButton Content="2000" GroupName="question" HorizontalAlignment="Left" Margin="131,205,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
-        <RadioButton Content="1994" GroupName="question" HorizontalAlignment="Left" Margin="131,259,0,0" VerticalAlignment="Top" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
-        <TextBox HorizontalAlignment="Left" Margin="96,28,0,0" TextWrapping="Wrap" Text="What year was .NET Core Released?" VerticalAlignment="Top" FontSize="36" FontFamily="Microsoft JhengHei UI Light"/>
-        <Button Name="Submit_btn" Content="Submit Quiz" FontSize="23" HorizontalAlignment="Left"  Margin="279,336,0,0" Width="200" Height="50" VerticalAlignment="Top" Foreground="White" Background="#FF1873E7" Click="Button_Click"/>
-        <Button Content="Next" HorizontalAlignment="Left" FontSize="23" Margin="579,299,0,0" Foreground="White" Background="#FF1873E7" VerticalAlignment="Top" Click="NextButton_Click" Width="75"/>
+        Title=".NET Core Quiz" Height="475" Width="800">
+    <StackPanel Name="panel_one">
+        <TextBox Name="question_txt" HorizontalAlignment="Left" Margin="96,28,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" FontSize="36" FontFamily="Microsoft JhengHei UI Light"/>
+        <ProgressBar Height="10" Margin="20 10 20 10"  Minimum="0" Maximum="2"  Name="quizStatus"/>
+        <RadioButton Content="" GroupName="question" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95 20 0 0" Checked="RadioButton_Checked" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="" GroupName="question" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95 20 0 0" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="" GroupName="question" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95 20 0 0" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <RadioButton Content="" GroupName="question" HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="95 20 0 0" FontFamily="Microsoft JhengHei UI Light" FontSize="22"/>
+        <StackPanel Orientation="Horizontal">
+            <Button Content="Previous" Name="Prev_btn" Margin="30 10 0 10" HorizontalAlignment="Left" FontSize="23"  Foreground="White" Style="{StaticResource ButtonColor}" VerticalAlignment="Top" Click="PrevButton_Click" Width="120"/>
+            <Button Content="Next" Name ="Next_btn"  Margin="490 10 0 10"  HorizontalAlignment="Right" FontSize="23"  Foreground="White"  Style="{StaticResource ButtonColor}" VerticalAlignment="Top" Click="NextButton_Click" Width="120"/>
+        </StackPanel>
+        
+        <Button Name="Submit_btn" Content="Submit Quiz" FontSize="23" HorizontalAlignment="Center"   Width="200" Height="50" VerticalAlignment="Top" Foreground="White" Background="#FF1873E7" Click="Button_Click"/>
+        
 
-    </Grid>
+
+    </StackPanel>
 </Window>

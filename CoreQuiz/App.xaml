@@ -4,6 +4,8 @@
              xmlns:local="clr-namespace:CoreQuiz"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <Style x:Key="ButtonColor">
+            <Setter Property="Control.Background" Value="#FF1873E7"/>
+        </Style>
     </Application.Resources>
 </Application>
